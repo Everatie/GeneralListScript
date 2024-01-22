@@ -1,0 +1,187 @@
+:root {
+    --button: #04AA6D;
+    --selectedButton : #025738;
+    --selectedOption: #04AA6D;
+    --dropdownBg: #363636;
+    --activeFontColor: aliceblue;
+    --sliderThumb: #04AA6D;
+    --sliderColor: #363636;
+    --defaultRadius: 5px;
+    --defaultMargins: 5px;
+}
+
+#interface_box {
+    color: var(--activeFontColor);
+    position: fixed;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 300px;
+}
+
+/*Dropdown config*/
+.GenreDropdown,
+.CountryDropdown,
+.ScoreDropdown {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: center;
+    /* Center items horizontally within the container */
+}
+
+.GenreButton,
+.CountryButton, 
+.ScoreButton {
+    color:var(--activeFontColor);
+    background-color: var(--button);
+    width: 120px;
+    padding: 8px;
+    margin: var(--defaultMargins);
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: var(--defaultRadius);
+}
+
+.selectedButton {
+    background-color: var(--selectedButton);
+}
+
+/* Dropdown Content */
+.DropList {
+    display: none;
+    position: relative;
+    top: 100%;
+    background-color: var(--dropdownBg);
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid var(--dropdownBg);
+    border-radius: var(--defaultRadius);
+    margin: var(--defaultMargins);
+}
+
+.drop_opt {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--dropdownBg);
+    color: var(--activeFontColor);
+    border: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+.selectedDropOpt {
+    background-color: var(--selectedOption);
+}
+
+/*Input config */
+.DropList input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: var(--defaultRadius);
+    background-color: var(--dropdownBg);
+    border-color: var(--dropdownBg);
+    color: aliceblue;
+    outline: none;
+}
+
+#InputTitle {
+    background-color: var(--dropdownBg);
+    border-color: var(--dropdownBg);
+    color:var(--activeFontColor);
+    margin: var(--defaultMargins);
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: var(--defaultRadius);
+    outline: none;
+}
+
+/* General styling for the slider */
+.YearSlider {
+    margin: var(--defaultMargins);
+    width: 100%;
+    -webkit-appearance: none;
+    /* Remove default styles in WebKit browsers */
+    appearance: none;
+    /* Remove default styles in other browsers */
+    height: 8px;
+    /* Set the height of the slider */
+    border-radius: var(--defaultRadius);
+    /* Set the border radius */
+    background-color: var(--sliderColor);
+    /* Set the background color of the slider */
+}
+
+/* Styling for the thumb (round part) of the slider */
+.YearSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Remove default styles in WebKit browsers */
+    appearance: none;
+    /* Remove default styles in other browsers */
+    width: 16px;
+    /* Set the width of the thumb */
+    height: 16px;
+    /* Set the height of the thumb */
+    border-radius: 50%;
+    /* Create a circular thumb */
+    background-color: var(--sliderThumb);
+    /* Set the color of the thumb */
+    border: none;
+    /* Remove the border */
+}
+
+.YearSlider::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--sliderThumb);
+    border: none;
+}
+
+.YearSlider::-ms-thumb {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--sliderThumb);
+    border: none;
+}
+
+/* Styling for the value div */
+.YearSliderValueDiv {
+    position: relative;
+    display: none;
+    background-color: var(--sliderColor);
+    border-radius: var(--defaultRadius);
+    font-size: 12px;
+}
+
+.YearSliderValueDiv.show {
+    display: block;
+}
+
+.YearSliderValueText {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+/*General config*/
+.show {
+    display: block;
+}
+
+.hiddenGenre,
+.hiddenCountry,
+.hiddenYear,
+.hiddenScore,
+.hiddenLi,
+.hiddenTd,
+.hiddenTitle {
+    display: none;
+}

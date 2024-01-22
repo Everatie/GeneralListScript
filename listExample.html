@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/listStyle.css">
+    <title>Manga list</title>
+    <style>
+        :root {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color:aliceblue;
+
+            --acc_bright: greenyellow;
+            --bg_color: #1f1f1f;
+        }
+
+        * {
+            margin: auto;
+            max-width: 800px;
+        }
+
+        header {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        a {
+            color: var(--acc_bright);
+            font: bolder;
+            padding: 0px 0px 0px 3px;
+        }
+
+        body {
+            background-color: var(--bg_color)
+        }
+
+        h1.center{
+            text-align: center;
+            margin: 40px;
+        }
+
+        table,
+        th,
+        td {
+            max-width: 800px;
+            padding: 5px;
+            margin: 20px;
+            border-collapse: collapse;
+        }
+
+        table {
+            background-color: #363636;
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            /* Ensures the border-radius clips the content */
+        }
+
+        thead {
+            text-align: center;
+            color: var(--bg_color);
+            background-color: white;
+            border-radius: 10px 10px 0 0;
+            /* Matches the top border-radius of the table */
+        }
+
+        tbody td {
+            padding: 15px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="interface_box"></div>
+        <ul id="table_list">
+            <li id="sectionInfo">
+                <h2>Info</h2>
+                <table id="table_Info">
+                    <thead>
+                        <tr>
+                            <th>Mangas read</th>
+                            <th>Chapters read</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ul>
+    </main>
+    <script src="./src/listScript.js"></script>
+    <script>
+        //Get Database info
+        dbExtract('http://127.0.0.1:5500/Toolkit/GeneralListScript/exampleDb.json', "MANGA")
+    </script>
+</body>
+</html>

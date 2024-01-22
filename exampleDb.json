@@ -1,0 +1,1013 @@
+{
+  "List": [
+    {
+      "Reading": [
+      ]
+    },
+    {
+      "Read": [
+        {
+          "genres": [
+            "Action",
+            "Horror",
+            "Mystery",
+            "Psychological",
+            "Supernatural"
+          ],
+          "countryOfOrigin": "Japan",
+          "title": {
+            "romaji": "Tokyo Ghoul",
+            "english": "Tokyo Ghoul"
+          },
+          "startDate": {
+            "year": 2011,
+            "month": 9,
+            "day": 22
+          },
+          "total_chapters": 144,
+          "read_chapters": 144,
+          "duration": 0,
+          "score": "Excellent",
+          "thoughts": "Ridiculamente edgy, porém com cenas memoráveis"
+        },
+        {
+          "title": {
+            "romaji": "ReLife",
+            "english": "ReLIFE"
+          },
+          "genres": [
+            "Comedy",
+            "Drama",
+            "Psychological",
+            "Romance",
+            "Slice of Life"
+          ],
+          "countryOfOrigin": "Japan",
+          "startDate": {
+            "year": 2013,
+            "month": 10,
+            "day": 12
+          },
+          "total_chapters": 238,
+          "read_chapters": 238,
+          "thoughts": "Ironicamente, o meio da obra é bem mediano (para não dizer ruim). Ainda sim, a soma das partes é muito boa",
+          "times_rewatched": 2,
+          "score": "Excellent"
+        }
+      ]
+    },
+    {
+      "Paused": [
+        {
+          "genres": [
+            "Fantasy",
+            "Romance"
+          ],
+          "countryOfOrigin": "Korea",
+          "title": {
+            "romaji": "Jjokjjogireul Juseyo",
+            "english": "Gimme That Pacifier!"
+          },
+          "startDate": {
+            "year": 2021,
+            "month": 12,
+            "day": 31
+          },
+          "total_chapters": null,
+          "read_chapters": 53,
+          "score": "Good",
+          "thoughts": "Otomezão"
+        },
+        {
+          "genres": [
+            "Action",
+            "Adventure",
+            "Drama"
+          ],
+          "countryOfOrigin": "Japan",
+          "title": {
+            "romaji": "Vinland Saga",
+            "english": "Vinland Saga"
+          },
+          "startDate": {
+            "year": 2005,
+            "month": 7,
+            "day": 15
+          },
+          "total_chapters": null,
+          "read_chapters": 100,
+          "score": "Favorite",
+          "thoughts": "A evolução do Thorffin e de todos os personagens é incrível (especialmente o clímax do Askellad)."
+        },
+        {
+          "genres": [
+            "Drama",
+            "Fantasy",
+            "Romance"
+          ],
+          "countryOfOrigin": "Korea",
+          "title": {
+            "romaji": "Eotteon Gyemonimui Marchen",
+            "english": "A Stepmother’s Märchen"
+          },
+          "startDate": {
+            "year": 2019,
+            "month": 7,
+            "day": 4
+          },
+          "total_chapters": null,
+          "read_chapters": 94,
+          "score": "Excellent",
+          "thoughts": "Ótimo traço"
+        },
+        {
+          "genres": [
+            "Comedy",
+            "Romance",
+            "Slice of Life"
+          ],
+          "countryOfOrigin": "Japan",
+          "title": {
+            "romaji": "Horimiya",
+            "english": "Horimiya"
+          },
+          "startDate": {
+            "year": 2011,
+            "month": 10,
+            "day": 18
+          },
+          "total_chapters": 152,
+          "read_chapters": 147,
+          "score": "Good",
+          "thoughts": "Para os padrões da indústria, romance fenomenal"
+        },
+        {
+          "title": {
+            "romaji": "Jeonjijeok Dokja Sijeom",
+            "english": "Omniscient Reader"
+          },
+          "genres": [
+            "Action",
+            "Adventure",
+            "Fantasy"
+          ],
+          "countryOfOrigin": "Korea",
+          "startDate": {
+            "year": 2020,
+            "month": 5,
+            "day": 26
+          },
+          "total_chapters": null,
+          "read_chapters": 72,
+          "thoughts": "TUdo o que o gênero tenta e falha em ser.",
+          "times_rewatched": 1,
+          "score": "Excellent"
+        },
+        {
+          "title": {
+            "romaji": "Yofukashi no Uta",
+            "english": "Call of the Night"
+          },
+          "genres": [
+            "Comedy",
+            "Psychological",
+            "Romance",
+            "Slice of Life",
+            "Supernatural"
+          ],
+          "countryOfOrigin": "Japan",
+          "startDate": {
+            "year": 2019,
+            "month": 8,
+            "day": 28
+          },
+          "total_chapters": 200,
+          "read_chapters": 34,
+          "thoughts": "Tem uma vibe bem relaxante",
+          "times_rewatched": 1,
+          "score": "Good"
+        },
+        {
+          "title": {
+            "romaji": "Blue Period",
+            "english": "Blue Period"
+          },
+          "genres": [
+            "Drama",
+            "Slice of Life"
+          ],
+          "countryOfOrigin": "Japan",
+          "startDate": {
+            "year": 2017,
+            "month": 6,
+            "day": 24
+          },
+          "total_chapters": null,
+          "read_chapters": 34,
+          "thoughts": "Cara, pior que é bom.",
+          "times_rewatched": 1,
+          "score": "Excellent"
+        },
+        {
+          "title": {
+            "romaji": "Jigokuraku",
+            "english": "Hell’s Paradise: Jigokuraku"
+          },
+          "genres": [
+            "Action",
+            "Adventure",
+            "Mystery",
+            "Supernatural"
+          ],
+          "countryOfOrigin": "Japan",
+          "startDate": {
+            "year": 2018,
+            "month": 1,
+            "day": 23
+          },
+          "total_chapters": 127,
+          "read_chapters": 28,
+          "thoughts": "Jamais imaginaria a qualidade disso",
+          "times_rewatched": 1,
+          "score": "Excellent"
+        },
+        {
+          "title": {
+            "romaji": "Nan Hao Shang Feng",
+            "english": "Nan Hao Shang Feng"
+          },
+          "genres": [
+            "Comedy",
+            "Slice of Life"
+          ],
+          "countryOfOrigin": "China",
+          "startDate": {
+            "year": 2019,
+            "month": 1,
+            "day": 20
+          },
+          "total_chapters": null,
+          "read_chapters": 73,
+          "thoughts": "Humor.",
+          "times_rewatched": 2,
+          "score": "Excellent"
+        },
+        {
+          "title": {
+            "romaji": "Kemono Jihen",
+            "english": "Kemono Jihen"
+          },
+          "genres": [
+            "Action",
+            "Supernatural"
+          ],
+          "countryOfOrigin": "Japan",
+          "startDate": {
+            "year": 2016,
+            "month": 12,
+            "day": 2
+          },
+          "total_chapters": null,
+          "read_chapters": 54,
+          "thoughts": "Bom.",
+          "times_rewatched": 1,
+          "score": "Good"
+        },
+        {
+          "title": {
+            "romaji": "Ao no Exorcist",
+            "english": "Blue Exorcist"
+          },
+          "genres": [
+            "Action",
+            "Supernatural"
+          ],
+          "countryOfOrigin": "Japan",
+          "startDate": {
+            "year": 2009,
+            "month": 4,
+            "day": 1
+          },
+          "total_chapters": null,
+          "read_chapters": 98,
+          "thoughts": "Se perde um pouco? Sim. Deixa de ser bom? Não.",
+          "times_rewatched": 1,
+          "score": "Excellent"
+        },
+        {
+          "title": {
+            "romaji": "Sweet Home",
+            "english": "Sweet Home"
+          },
+          "genres": [
+            "Drama",
+            "Horror",
+            "Psychological",
+            "Supernatural",
+            "Thriller"
+          ],
+          "countryOfOrigin": "Korea",
+          "startDate": {
+            "year": 2017,
+            "month": 10,
+            "day": 19
+          },
+          "total_chapters": 141,
+          "read_chapters": 43,
+          "thoughts": "Thrillerzinho de respeito.",
+          "times_rewatched": 1,
+          "score": "Excellent"
+        },
+        {
+          "title": {
+            "romaji": "Kusuriya no Hitorigoto",
+            "english": "The Apothecary Diaries"
+          },
+          "genres": [
+            "Drama",
+            "Mystery"
+          ],
+          "countryOfOrigin": "Japan",
+          "startDate": {
+            "year": 2017,
+            "month": 5,
+            "day": 25
+          },
+          "total_chapters": null,
+          "read_chapters": 40,
+          "thoughts": "",
+          "times_rewatched": 1,
+          "score": "Favorite"
+        },
+        {
+          "title": {
+            "romaji": "Fumetsu no Anata e",
+            "english": "To Your Eternity"
+          },
+          "genres": [
+            "Adventure",
+            "Drama",
+            "Fantasy",
+            "Psychological",
+            "Supernatural"
+          ],
+          "countryOfOrigin": "Japan",
+          "startDate": {
+            "year": 2016,
+            "month": 11,
+            "day": 9
+          },
+          "total_chapters": null,
+          "read_chapters": 71,
+          "thoughts": "Lindo.",
+          "times_rewatched": 2,
+          "score": "Favorite"
+        }
+      ]
+    },
+    {
+      "Dropped": [
+        {
+          "genres": [
+            "Action",
+            "Drama",
+            "Horror",
+            "Mystery",
+            "Psychological",
+            "Supernatural"
+          ],
+          "countryOfOrigin": "Japan",
+          "title": {
+            "romaji": "Tokyo Ghoul:re",
+            "english": "Tokyo Ghoul:re"
+          },
+          "startDate": {
+            "year": 2014,
+            "month": 10,
+            "day": 16
+          },
+          "total_chapters": 181,
+          "read_chapters": 53,
+          "duration": 0,
+          "score": "Meh",
+          "thoughts": "A história se perdeu"
+        },
+        {
+          "title": {
+            "romaji": "Medical Hwansaeng",
+            "english": "Medical return"
+          },
+          "genres": [
+            "Action",
+            "Drama",
+            "Fantasy",
+            "Slice of Life"
+          ],
+          "countryOfOrigin": "Korea",
+          "startDate": {
+            "year": 2019,
+            "month": 9,
+            "day": 7
+          },
+          "total_chapters": 148,
+          "read_chapters": 123,
+          "thoughts": "Maneirinho",
+          "score": "Good"
+        },
+        {
+          "title": {
+            "romaji": "SSS-geup Jugeoya Saneun Hunter",
+            "english": "SSS-Class Revival Hunter"
+          },
+          "genres": [
+            "Action",
+            "Adventure",
+            "Drama",
+            "Fantasy",
+            "Supernatural"
+          ],
+          "countryOfOrigin": "Korea",
+          "startDate": {
+            "year": 2020,
+            "month": 12,
+            "day": 31
+          },
+          "total_chapters": null,
+          "read_chapters": 67,
+          "thoughts": "Resolvi ir para a novel",
+          "score": "Excellent"
+        },
+        {
+          "title": {
+            "romaji": "Yao Shen Ji",
+            "english": "Tales of Demons and Gods"
+          },
+          "genres": [
+            "Action",
+            "Adventure",
+            "Fantasy",
+            "Romance"
+          ],
+          "countryOfOrigin": "China",
+          "startDate": {
+            "year": 2015,
+            "month": null,
+            "day": null
+          },
+          "total_chapters": null,
+          "read_chapters": 230,
+          "thoughts": "Tenebroso, o protagonista é praticamente um Deus.",
+          "score": "Bad"
+        },
+        {
+          "title": {
+            "romaji": "Wo Laopo Shi Mowang Daren",
+            "english": "My Wife is the Demon Queen"
+          },
+          "genres": [
+            "Action",
+            "Adventure",
+            "Fantasy",
+            "Romance"
+          ],
+          "countryOfOrigin": "China",
+          "startDate": {
+            "year": 2019,
+            "month": null,
+            "day": null
+          },
+          "total_chapters": 460,
+          "read_chapters": 123,
+          "thoughts": "Torturante.",
+          "score": "Horrible"
+        },
+        {
+          "title": {
+            "romaji": "Douluo Dalu II: Jueshi Tangmen",
+            "english": "Soul Land 2: The Unrivaled Tang Sect"
+          },
+          "genres": [
+            "Action",
+            "Adventure",
+            "Fantasy",
+            "Romance"
+          ],
+          "countryOfOrigin": "China",
+          "startDate": {
+            "year": 2012,
+            "month": 11,
+            "day": 22
+          },
+          "total_chapters": null,
+          "read_chapters": 200,
+          "thoughts": "Durante alguns muitos capítulos eu vi nisso a salvação do Wuxia, uma revulação, uma esperança. Eu estava terrivelmente enganado.",
+          "score": "Bad"
+        },
+        {
+          "title": {
+            "romaji": "Douluo Dalu",
+            "english": "Soul Land"
+          },
+          "genres": [
+            "Action",
+            "Adventure",
+            "Fantasy",
+            "Romance"
+          ],
+          "countryOfOrigin": "China",
+          "startDate": {
+            "year": 2011,
+            "month": null,
+            "day": null
+          },
+          "total_chapters": null,
+          "read_chapters": 120,
+          "thoughts": "Li enquanto via na continuação a salvação do Wuxia, estava errado em ter fé lá. Aqui também.",
+          "score": "Bad"
+        },
+        {
+          "title": {
+            "romaji": "Mato Seihei no Slave",
+            "english": "Chained Soldier"
+          },
+          "genres": [
+            "Action",
+            "Adventure",
+            "Drama",
+            "Ecchi",
+            "Fantasy",
+            "Romance"
+          ],
+          "countryOfOrigin": "Japan",
+          "startDate": {
+            "year": 2019,
+            "month": 1,
+            "day": 5
+          },
+          "total_chapters": null,
+          "read_chapters": 53,
+          "thoughts": "Acredite ou não, eu lia isso pela história. Infelizmente é só um ecchizão.",
+          "score": "Meh"
+        },
+        {
+          "title": {
+            "romaji": "Owari no Seraph",
+            "english": "Seraph of the End: Vampire Reign"
+          },
+          "genres": [
+            "Action",
+            "Drama",
+            "Mystery",
+            "Supernatural"
+          ],
+          "countryOfOrigin": "Japan",
+          "startDate": {
+            "year": 2012,
+            "month": 9,
+            "day": 3
+          },
+          "total_chapters": null,
+          "read_chapters": 53,
+          "thoughts": "Eu até que curtia, pelo menos até a história se perder completamente.",
+          "score": "Good"
+        },
+        {
+          "title": {
+            "romaji": "Saikin Yatotta Maid ga Ayashii",
+            "english": "Saikin Yatotta Maid ga Ayashii"
+          },
+          "genres": [
+            "Comedy",
+            "Slice of Life"
+          ],
+          "countryOfOrigin": "Japan",
+          "startDate": {
+            "year": 2019,
+            "month": 10,
+            "day": 17
+          },
+          "total_chapters": null,
+          "read_chapters": 12,
+          "thoughts": "",
+          "score": "Meh"
+        },
+        {
+          "title": {
+            "romaji": "Guang Zhizi",
+            "english": "Great Mage of Light"
+          },
+          "genres": [
+            "Action",
+            "Adventure",
+            "Comedy",
+            "Fantasy"
+          ],
+          "countryOfOrigin": "China",
+          "startDate": {
+            "year": 2019,
+            "month": 2,
+            "day": 8
+          },
+          "total_chapters": null,
+          "read_chapters": 23,
+          "thoughts": "É impressionante como tudo que esse autor cria é sem alma.",
+          "score": "Bad"
+        },
+        {
+          "title": {
+            "romaji": "Douluo Dalu 3: Long Wang Chuanshuo",
+            "english": "Soul Land 3: Legend of the Dragon King"
+          },
+          "genres": [
+            "Action",
+            "Adventure",
+            "Comedy",
+            "Fantasy",
+            "Romance"
+          ],
+          "countryOfOrigin": "China",
+          "startDate": {
+            "year": 2016,
+            "month": 6,
+            "day": 2
+          },
+          "total_chapters": null,
+          "read_chapters": 41,
+          "thoughts": "Eu não sei porquê possuia tanta esperança nisso.n",
+          "score": "Bad"
+        },
+        {
+          "title": {
+            "romaji": "Sinui Tap",
+            "english": "Tower of God"
+          },
+          "genres": [
+            "Action",
+            "Adventure",
+            "Drama",
+            "Fantasy",
+            "Mystery"
+          ],
+          "countryOfOrigin": "Korea",
+          "startDate": {
+            "year": 2010,
+            "month": 6,
+            "day": 30
+          },
+          "total_chapters": null,
+          "read_chapters": 298,
+          "thoughts": "Conforme a história avança, o charme é perdido",
+          "score": "Meh"
+        },
+        {
+          "title": {
+            "romaji": "Gwihwanjaui Mabeobeun Teukbyeolhaeya Hamnida",
+            "english": "A Returner's Magic Should Be Special"
+          },
+          "genres": [
+            "Action",
+            "Adventure",
+            "Fantasy"
+          ],
+          "countryOfOrigin": "Korea",
+          "startDate": {
+            "year": 2018,
+            "month": 5,
+            "day": 20
+          },
+          "total_chapters": null,
+          "read_chapters": 58,
+          "thoughts": "Padrão, ainda que o traço seja acima da média",
+          "score": "Meh"
+        },
+        {
+          "title": {
+            "romaji": "Oegwauisa Elise",
+            "english": "Doctor Elise: The Royal Lady with the Lamp"
+          },
+          "genres": [
+            "Comedy",
+            "Fantasy",
+            "Romance"
+          ],
+          "countryOfOrigin": "Korea",
+          "startDate": {
+            "year": 2017,
+            "month": 9,
+            "day": 18
+          },
+          "total_chapters": 143,
+          "read_chapters": 87,
+          "thoughts": "Não há nada de novo sob o sol",
+          "score": "Meh"
+        },
+        {
+          "title": {
+            "romaji": "Hwataga Doen Oegwauisa",
+            "english": "The Divine Surgeon"
+          },
+          "genres": [
+            "Action",
+            "Fantasy"
+          ],
+          "countryOfOrigin": "Korea",
+          "startDate": {
+            "year": 2022,
+            "month": 1,
+            "day": 31
+          },
+          "total_chapters": null,
+          "read_chapters": 21,
+          "thoughts": "Isekai medieval de médico que obviamente deixa a desejar",
+          "score": "Bad"
+        },
+        {
+          "title": {
+            "romaji": "Again My Life",
+            "english": "Again My Life"
+          },
+          "genres": [
+            "Action",
+            "Drama"
+          ],
+          "countryOfOrigin": "Korea",
+          "startDate": {
+            "year": 2019,
+            "month": 6,
+            "day": 12
+          },
+          "total_chapters": 142,
+          "read_chapters": 3,
+          "thoughts": "Medical Return melhorado",
+          "score": "Good"
+        },
+        {
+          "title": {
+            "romaji": "The Gamer",
+            "english": "The Gamer"
+          },
+          "genres": [
+            "Action",
+            "Adventure",
+            "Fantasy"
+          ],
+          "countryOfOrigin": "Korea",
+          "startDate": {
+            "year": 2013,
+            "month": 9,
+            "day": 9
+          },
+          "total_chapters": null,
+          "read_chapters": 210,
+          "thoughts": "Não posso nem falar que a história é ruim, pois ela nem existe.",
+          "score": "Horrible"
+        },
+        {
+          "title": {
+            "romaji": "Jibaku Shounen Hanako-kun",
+            "english": "Toilet-Bound Hanako-kun"
+          },
+          "genres": [
+            "Action",
+            "Comedy",
+            "Drama",
+            "Mystery",
+            "Romance",
+            "Supernatural"
+          ],
+          "countryOfOrigin": "Japan",
+          "startDate": {
+            "year": 2014,
+            "month": 6,
+            "day": 18
+          },
+          "total_chapters": null,
+          "read_chapters": 53,
+          "thoughts": "Não me pegou",
+          "score": "Meh"
+        },
+        {
+          "title": {
+            "romaji": "Tamen De Gushi",
+            "english": "SQ: Begin W/Your Name!"
+          },
+          "genres": [
+            "Comedy",
+            "Romance",
+            "Slice of Life"
+          ],
+          "countryOfOrigin": "China",
+          "startDate": {
+            "year": 2014,
+            "month": 11,
+            "day": 22
+          },
+          "total_chapters": null,
+          "read_chapters": 53,
+          "thoughts": "Fofinho",
+          "score": "Good"
+        },
+        {
+          "title": {
+            "romaji": "Shinigami Bocchan to Kuro Maid",
+            "english": "The Duke of Death and His Maid"
+          },
+          "genres": [
+            "Comedy",
+            "Romance",
+            "Supernatural"
+          ],
+          "countryOfOrigin": "Japan",
+          "startDate": {
+            "year": 2017,
+            "month": 10,
+            "day": 3
+          },
+          "total_chapters": 240,
+          "read_chapters": 32,
+          "thoughts": "Nada demais.",
+          "score": "Bad"
+        },
+        {
+          "title": {
+            "romaji": "Soredemo Ayumu wa Yosetekuru",
+            "english": "When Will Ayumu Make His Move?"
+          },
+          "genres": [
+            "Comedy",
+            "Romance",
+            "Slice of Life"
+          ],
+          "countryOfOrigin": "Japan",
+          "startDate": {
+            "year": 2019,
+            "month": 3,
+            "day": 6
+          },
+          "total_chapters": 240,
+          "read_chapters": 61,
+          "thoughts": "",
+          "score": "Meh"
+        },
+        {
+          "title": {
+            "romaji": "Yozakura-san Chi no Daisakusen",
+            "english": "Mission: Yozakura Family"
+          },
+          "genres": [
+            "Action",
+            "Comedy",
+            "Romance"
+          ],
+          "countryOfOrigin": "Japan",
+          "startDate": {
+            "year": 2019,
+            "month": 8,
+            "day": 26
+          },
+          "total_chapters": null,
+          "read_chapters": 56,
+          "thoughts": "Ao menos tenta ser excêntrico",
+          "score": "Meh"
+        },
+        {
+          "title": {
+            "romaji": "Ijiranaide, Nagatoro-san",
+            "english": "Don't Toy With Me, Miss Nagatoro"
+          },
+          "genres": [
+            "Comedy",
+            "Romance",
+            "Slice of Life"
+          ],
+          "countryOfOrigin": "Japan",
+          "startDate": {
+            "year": 2017,
+            "month": 11,
+            "day": 7
+          },
+          "total_chapters": null,
+          "read_chapters": 53,
+          "thoughts": "É.",
+          "score": "Meh"
+        },
+        {
+          "title": {
+            "romaji": "Kanojo, Okarishimasu",
+            "english": "Rent-A-Girlfriend"
+          },
+          "genres": [
+            "Comedy",
+            "Drama",
+            "Ecchi",
+            "Romance"
+          ],
+          "countryOfOrigin": "Japan",
+          "startDate": {
+            "year": 2017,
+            "month": 7,
+            "day": 12
+          },
+          "total_chapters": null,
+          "read_chapters": 121,
+          "thoughts": "É incrível como a história não saí do lugar.",
+          "score": "Horrible"
+        },
+        {
+          "title": {
+            "romaji": "Sousei no Onmyouji",
+            "english": "Twin Star Exorcists"
+          },
+          "genres": [
+            "Action",
+            "Comedy",
+            "Drama",
+            "Fantasy",
+            "Romance",
+            "Supernatural"
+          ],
+          "countryOfOrigin": "Japan",
+          "startDate": {
+            "year": 2013,
+            "month": 11,
+            "day": 2
+          },
+          "total_chapters": null,
+          "read_chapters": 67,
+          "thoughts": "Não botava fé nenhuma, mas até que é legal",
+          "score": "Good"
+        }
+      ]
+    },
+    {
+      "PlanToRead": [
+        {
+          "title": {
+            "romaji": "3-gatsu no Lion",
+            "english": "March Comes in Like a Lion"
+          },
+          "genres": [
+            "Drama",
+            "Slice of Life"
+          ],
+          "countryOfOrigin": "Japan",
+          "startDate": {
+            "year": 2007,
+            "month": 7,
+            "day": 13
+          },
+          "total_chapters": null,
+          "read_chapters": 0,
+          "thoughts": "",
+          "score": null
+        },
+        {
+          "title": {
+            "romaji": "Ookami to Koushinryou",
+            "english": "Spice & Wolf"
+          },
+          "genres": [
+            "Adventure",
+            "Drama",
+            "Fantasy",
+            "Romance",
+            "Supernatural"
+          ],
+          "countryOfOrigin": "Japan",
+          "startDate": {
+            "year": 2007,
+            "month": 9,
+            "day": 27
+          },
+          "total_chapters": 108,
+          "read_chapters": 0,
+          "thoughts": "",
+          "score": null
+        },
+        {
+          "title": {
+            "romaji": "BEASTARS",
+            "english": "BEASTARS"
+          },
+          "genres": [
+            "Drama",
+            "Mystery",
+            "Psychological",
+            "Romance",
+            "Slice of Life"
+          ],
+          "countryOfOrigin": "Japan",
+          "startDate": {
+            "year": 2016,
+            "month": 9,
+            "day": 8
+          },
+          "total_chapters": 196,
+          "read_chapters": 0,
+          "thoughts": "",
+          "score": null
+        }
+      ]
+    }
+  ]
+}
