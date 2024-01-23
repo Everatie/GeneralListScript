@@ -1,8 +1,7 @@
 {
   "List": [
     {
-      "Reading": [
-      ]
+      "Reading": []
     },
     {
       "Read": [
@@ -19,16 +18,13 @@
             "romaji": "Tokyo Ghoul",
             "english": "Tokyo Ghoul"
           },
-          "startDate": {
-            "year": 2011,
-            "month": 9,
-            "day": 22
-          },
           "total_chapters": 144,
           "read_chapters": 144,
           "duration": 0,
           "score": "Excellent",
-          "thoughts": "Ridiculamente edgy, porém com cenas memoráveis"
+          "thoughts": "Ridiculamente edgy, porém com cenas memoráveis",
+          "releaseDate": "2011-9-22",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -43,16 +39,13 @@
             "Slice of Life"
           ],
           "countryOfOrigin": "Japan",
-          "startDate": {
-            "year": 2013,
-            "month": 10,
-            "day": 12
-          },
           "total_chapters": 238,
           "read_chapters": 238,
           "thoughts": "Ironicamente, o meio da obra é bem mediano (para não dizer ruim). Ainda sim, a soma das partes é muito boa",
           "times_rewatched": 2,
-          "score": "Excellent"
+          "score": "Excellent",
+          "releaseDate": "2013-10-12",
+          "entryDate": "2024-01-22 11:25:12"
         }
       ]
     },
@@ -68,15 +61,12 @@
             "romaji": "Jjokjjogireul Juseyo",
             "english": "Gimme That Pacifier!"
           },
-          "startDate": {
-            "year": 2021,
-            "month": 12,
-            "day": 31
-          },
           "total_chapters": null,
           "read_chapters": 53,
           "score": "Good",
-          "thoughts": "Otomezão"
+          "thoughts": "Otomezão",
+          "releaseDate": "2021-12-31",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "genres": [
@@ -89,15 +79,12 @@
             "romaji": "Vinland Saga",
             "english": "Vinland Saga"
           },
-          "startDate": {
-            "year": 2005,
-            "month": 7,
-            "day": 15
-          },
           "total_chapters": null,
           "read_chapters": 100,
           "score": "Favorite",
-          "thoughts": "A evolução do Thorffin e de todos os personagens é incrível (especialmente o clímax do Askellad)."
+          "thoughts": "A evolução do Thorffin e de todos os personagens é incrível (especialmente o clímax do Askellad).",
+          "releaseDate": "2005-7-15",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "genres": [
@@ -110,15 +97,12 @@
             "romaji": "Eotteon Gyemonimui Marchen",
             "english": "A Stepmother’s Märchen"
           },
-          "startDate": {
-            "year": 2019,
-            "month": 7,
-            "day": 4
-          },
           "total_chapters": null,
           "read_chapters": 94,
           "score": "Excellent",
-          "thoughts": "Ótimo traço"
+          "thoughts": "Ótimo traço",
+          "releaseDate": "2019-7-4",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "genres": [
@@ -131,15 +115,12 @@
             "romaji": "Horimiya",
             "english": "Horimiya"
           },
-          "startDate": {
-            "year": 2011,
-            "month": 10,
-            "day": 18
-          },
           "total_chapters": 152,
           "read_chapters": 147,
           "score": "Good",
-          "thoughts": "Para os padrões da indústria, romance fenomenal"
+          "thoughts": "Para os padrões da indústria, romance fenomenal",
+          "releaseDate": "2011-10-18",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -152,16 +133,13 @@
             "Fantasy"
           ],
           "countryOfOrigin": "Korea",
-          "startDate": {
-            "year": 2020,
-            "month": 5,
-            "day": 26
-          },
           "total_chapters": null,
           "read_chapters": 72,
           "thoughts": "TUdo o que o gênero tenta e falha em ser.",
           "times_rewatched": 1,
-          "score": "Excellent"
+          "score": "Excellent",
+          "releaseDate": "2020-5-26",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -176,16 +154,13 @@
             "Supernatural"
           ],
           "countryOfOrigin": "Japan",
-          "startDate": {
-            "year": 2019,
-            "month": 8,
-            "day": 28
-          },
           "total_chapters": 200,
           "read_chapters": 34,
           "thoughts": "Tem uma vibe bem relaxante",
           "times_rewatched": 1,
-          "score": "Good"
+          "score": "Good",
+          "releaseDate": "2019-8-28",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -197,16 +172,13 @@
             "Slice of Life"
           ],
           "countryOfOrigin": "Japan",
-          "startDate": {
-            "year": 2017,
-            "month": 6,
-            "day": 24
-          },
           "total_chapters": null,
           "read_chapters": 34,
           "thoughts": "Cara, pior que é bom.",
           "times_rewatched": 1,
-          "score": "Excellent"
+          "score": "Excellent",
+          "releaseDate": "2017-6-24",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -220,16 +192,13 @@
             "Supernatural"
           ],
           "countryOfOrigin": "Japan",
-          "startDate": {
-            "year": 2018,
-            "month": 1,
-            "day": 23
-          },
           "total_chapters": 127,
           "read_chapters": 28,
           "thoughts": "Jamais imaginaria a qualidade disso",
           "times_rewatched": 1,
-          "score": "Excellent"
+          "score": "Excellent",
+          "releaseDate": "2018-1-23",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -241,16 +210,13 @@
             "Slice of Life"
           ],
           "countryOfOrigin": "China",
-          "startDate": {
-            "year": 2019,
-            "month": 1,
-            "day": 20
-          },
           "total_chapters": null,
           "read_chapters": 73,
           "thoughts": "Humor.",
           "times_rewatched": 2,
-          "score": "Excellent"
+          "score": "Excellent",
+          "releaseDate": "2019-1-20",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -262,16 +228,13 @@
             "Supernatural"
           ],
           "countryOfOrigin": "Japan",
-          "startDate": {
-            "year": 2016,
-            "month": 12,
-            "day": 2
-          },
           "total_chapters": null,
           "read_chapters": 54,
           "thoughts": "Bom.",
           "times_rewatched": 1,
-          "score": "Good"
+          "score": "Good",
+          "releaseDate": "2016-12-2",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -283,16 +246,13 @@
             "Supernatural"
           ],
           "countryOfOrigin": "Japan",
-          "startDate": {
-            "year": 2009,
-            "month": 4,
-            "day": 1
-          },
           "total_chapters": null,
           "read_chapters": 98,
           "thoughts": "Se perde um pouco? Sim. Deixa de ser bom? Não.",
           "times_rewatched": 1,
-          "score": "Excellent"
+          "score": "Excellent",
+          "releaseDate": "2009-4-1",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -307,16 +267,13 @@
             "Thriller"
           ],
           "countryOfOrigin": "Korea",
-          "startDate": {
-            "year": 2017,
-            "month": 10,
-            "day": 19
-          },
           "total_chapters": 141,
           "read_chapters": 43,
           "thoughts": "Thrillerzinho de respeito.",
           "times_rewatched": 1,
-          "score": "Excellent"
+          "score": "Excellent",
+          "releaseDate": "2017-10-19",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -328,16 +285,13 @@
             "Mystery"
           ],
           "countryOfOrigin": "Japan",
-          "startDate": {
-            "year": 2017,
-            "month": 5,
-            "day": 25
-          },
           "total_chapters": null,
           "read_chapters": 40,
           "thoughts": "",
           "times_rewatched": 1,
-          "score": "Favorite"
+          "score": "Favorite",
+          "releaseDate": "2017-5-25",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -352,16 +306,13 @@
             "Supernatural"
           ],
           "countryOfOrigin": "Japan",
-          "startDate": {
-            "year": 2016,
-            "month": 11,
-            "day": 9
-          },
           "total_chapters": null,
           "read_chapters": 71,
           "thoughts": "Lindo.",
           "times_rewatched": 2,
-          "score": "Favorite"
+          "score": "Favorite",
+          "releaseDate": "2016-11-9",
+          "entryDate": "2024-01-22 11:25:12"
         }
       ]
     },
@@ -381,16 +332,13 @@
             "romaji": "Tokyo Ghoul:re",
             "english": "Tokyo Ghoul:re"
           },
-          "startDate": {
-            "year": 2014,
-            "month": 10,
-            "day": 16
-          },
           "total_chapters": 181,
           "read_chapters": 53,
           "duration": 0,
           "score": "Meh",
-          "thoughts": "A história se perdeu"
+          "thoughts": "A história se perdeu",
+          "releaseDate": "2014-10-16",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -404,15 +352,12 @@
             "Slice of Life"
           ],
           "countryOfOrigin": "Korea",
-          "startDate": {
-            "year": 2019,
-            "month": 9,
-            "day": 7
-          },
           "total_chapters": 148,
           "read_chapters": 123,
           "thoughts": "Maneirinho",
-          "score": "Good"
+          "score": "Good",
+          "releaseDate": "2019-9-7",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -427,15 +372,12 @@
             "Supernatural"
           ],
           "countryOfOrigin": "Korea",
-          "startDate": {
-            "year": 2020,
-            "month": 12,
-            "day": 31
-          },
           "total_chapters": null,
           "read_chapters": 67,
           "thoughts": "Resolvi ir para a novel",
-          "score": "Excellent"
+          "score": "Excellent",
+          "releaseDate": "2020-12-31",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -449,15 +391,12 @@
             "Romance"
           ],
           "countryOfOrigin": "China",
-          "startDate": {
-            "year": 2015,
-            "month": null,
-            "day": null
-          },
           "total_chapters": null,
           "read_chapters": 230,
           "thoughts": "Tenebroso, o protagonista é praticamente um Deus.",
-          "score": "Bad"
+          "score": "Bad",
+          "releaseDate": "2015-None-None",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -471,15 +410,12 @@
             "Romance"
           ],
           "countryOfOrigin": "China",
-          "startDate": {
-            "year": 2019,
-            "month": null,
-            "day": null
-          },
           "total_chapters": 460,
           "read_chapters": 123,
           "thoughts": "Torturante.",
-          "score": "Horrible"
+          "score": "Horrible",
+          "releaseDate": "2019-None-None",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -493,15 +429,12 @@
             "Romance"
           ],
           "countryOfOrigin": "China",
-          "startDate": {
-            "year": 2012,
-            "month": 11,
-            "day": 22
-          },
           "total_chapters": null,
           "read_chapters": 200,
           "thoughts": "Durante alguns muitos capítulos eu vi nisso a salvação do Wuxia, uma revulação, uma esperança. Eu estava terrivelmente enganado.",
-          "score": "Bad"
+          "score": "Bad",
+          "releaseDate": "2012-11-22",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -515,15 +448,12 @@
             "Romance"
           ],
           "countryOfOrigin": "China",
-          "startDate": {
-            "year": 2011,
-            "month": null,
-            "day": null
-          },
           "total_chapters": null,
           "read_chapters": 120,
           "thoughts": "Li enquanto via na continuação a salvação do Wuxia, estava errado em ter fé lá. Aqui também.",
-          "score": "Bad"
+          "score": "Bad",
+          "releaseDate": "2011-None-None",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -539,15 +469,12 @@
             "Romance"
           ],
           "countryOfOrigin": "Japan",
-          "startDate": {
-            "year": 2019,
-            "month": 1,
-            "day": 5
-          },
           "total_chapters": null,
           "read_chapters": 53,
           "thoughts": "Acredite ou não, eu lia isso pela história. Infelizmente é só um ecchizão.",
-          "score": "Meh"
+          "score": "Meh",
+          "releaseDate": "2019-1-5",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -561,15 +488,12 @@
             "Supernatural"
           ],
           "countryOfOrigin": "Japan",
-          "startDate": {
-            "year": 2012,
-            "month": 9,
-            "day": 3
-          },
           "total_chapters": null,
           "read_chapters": 53,
           "thoughts": "Eu até que curtia, pelo menos até a história se perder completamente.",
-          "score": "Good"
+          "score": "Good",
+          "releaseDate": "2012-9-3",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -581,15 +505,12 @@
             "Slice of Life"
           ],
           "countryOfOrigin": "Japan",
-          "startDate": {
-            "year": 2019,
-            "month": 10,
-            "day": 17
-          },
           "total_chapters": null,
           "read_chapters": 12,
           "thoughts": "",
-          "score": "Meh"
+          "score": "Meh",
+          "releaseDate": "2019-10-17",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -603,15 +524,12 @@
             "Fantasy"
           ],
           "countryOfOrigin": "China",
-          "startDate": {
-            "year": 2019,
-            "month": 2,
-            "day": 8
-          },
           "total_chapters": null,
           "read_chapters": 23,
           "thoughts": "É impressionante como tudo que esse autor cria é sem alma.",
-          "score": "Bad"
+          "score": "Bad",
+          "releaseDate": "2019-2-8",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -626,15 +544,12 @@
             "Romance"
           ],
           "countryOfOrigin": "China",
-          "startDate": {
-            "year": 2016,
-            "month": 6,
-            "day": 2
-          },
           "total_chapters": null,
           "read_chapters": 41,
           "thoughts": "Eu não sei porquê possuia tanta esperança nisso.n",
-          "score": "Bad"
+          "score": "Bad",
+          "releaseDate": "2016-6-2",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -649,15 +564,12 @@
             "Mystery"
           ],
           "countryOfOrigin": "Korea",
-          "startDate": {
-            "year": 2010,
-            "month": 6,
-            "day": 30
-          },
           "total_chapters": null,
           "read_chapters": 298,
           "thoughts": "Conforme a história avança, o charme é perdido",
-          "score": "Meh"
+          "score": "Meh",
+          "releaseDate": "2010-6-30",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -670,15 +582,12 @@
             "Fantasy"
           ],
           "countryOfOrigin": "Korea",
-          "startDate": {
-            "year": 2018,
-            "month": 5,
-            "day": 20
-          },
           "total_chapters": null,
           "read_chapters": 58,
           "thoughts": "Padrão, ainda que o traço seja acima da média",
-          "score": "Meh"
+          "score": "Meh",
+          "releaseDate": "2018-5-20",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -691,15 +600,12 @@
             "Romance"
           ],
           "countryOfOrigin": "Korea",
-          "startDate": {
-            "year": 2017,
-            "month": 9,
-            "day": 18
-          },
           "total_chapters": 143,
           "read_chapters": 87,
           "thoughts": "Não há nada de novo sob o sol",
-          "score": "Meh"
+          "score": "Meh",
+          "releaseDate": "2017-9-18",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -711,15 +617,12 @@
             "Fantasy"
           ],
           "countryOfOrigin": "Korea",
-          "startDate": {
-            "year": 2022,
-            "month": 1,
-            "day": 31
-          },
           "total_chapters": null,
           "read_chapters": 21,
           "thoughts": "Isekai medieval de médico que obviamente deixa a desejar",
-          "score": "Bad"
+          "score": "Bad",
+          "releaseDate": "2022-1-31",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -731,15 +634,12 @@
             "Drama"
           ],
           "countryOfOrigin": "Korea",
-          "startDate": {
-            "year": 2019,
-            "month": 6,
-            "day": 12
-          },
           "total_chapters": 142,
           "read_chapters": 3,
           "thoughts": "Medical Return melhorado",
-          "score": "Good"
+          "score": "Good",
+          "releaseDate": "2019-6-12",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -752,15 +652,12 @@
             "Fantasy"
           ],
           "countryOfOrigin": "Korea",
-          "startDate": {
-            "year": 2013,
-            "month": 9,
-            "day": 9
-          },
           "total_chapters": null,
           "read_chapters": 210,
           "thoughts": "Não posso nem falar que a história é ruim, pois ela nem existe.",
-          "score": "Horrible"
+          "score": "Horrible",
+          "releaseDate": "2013-9-9",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -776,15 +673,12 @@
             "Supernatural"
           ],
           "countryOfOrigin": "Japan",
-          "startDate": {
-            "year": 2014,
-            "month": 6,
-            "day": 18
-          },
           "total_chapters": null,
           "read_chapters": 53,
           "thoughts": "Não me pegou",
-          "score": "Meh"
+          "score": "Meh",
+          "releaseDate": "2014-6-18",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -797,15 +691,12 @@
             "Slice of Life"
           ],
           "countryOfOrigin": "China",
-          "startDate": {
-            "year": 2014,
-            "month": 11,
-            "day": 22
-          },
           "total_chapters": null,
           "read_chapters": 53,
           "thoughts": "Fofinho",
-          "score": "Good"
+          "score": "Good",
+          "releaseDate": "2014-11-22",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -818,15 +709,12 @@
             "Supernatural"
           ],
           "countryOfOrigin": "Japan",
-          "startDate": {
-            "year": 2017,
-            "month": 10,
-            "day": 3
-          },
           "total_chapters": 240,
           "read_chapters": 32,
           "thoughts": "Nada demais.",
-          "score": "Bad"
+          "score": "Bad",
+          "releaseDate": "2017-10-3",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -839,15 +727,12 @@
             "Slice of Life"
           ],
           "countryOfOrigin": "Japan",
-          "startDate": {
-            "year": 2019,
-            "month": 3,
-            "day": 6
-          },
           "total_chapters": 240,
           "read_chapters": 61,
           "thoughts": "",
-          "score": "Meh"
+          "score": "Meh",
+          "releaseDate": "2019-3-6",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -860,15 +745,12 @@
             "Romance"
           ],
           "countryOfOrigin": "Japan",
-          "startDate": {
-            "year": 2019,
-            "month": 8,
-            "day": 26
-          },
           "total_chapters": null,
           "read_chapters": 56,
           "thoughts": "Ao menos tenta ser excêntrico",
-          "score": "Meh"
+          "score": "Meh",
+          "releaseDate": "2019-8-26",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -881,15 +763,12 @@
             "Slice of Life"
           ],
           "countryOfOrigin": "Japan",
-          "startDate": {
-            "year": 2017,
-            "month": 11,
-            "day": 7
-          },
           "total_chapters": null,
           "read_chapters": 53,
           "thoughts": "É.",
-          "score": "Meh"
+          "score": "Meh",
+          "releaseDate": "2017-11-7",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -903,15 +782,12 @@
             "Romance"
           ],
           "countryOfOrigin": "Japan",
-          "startDate": {
-            "year": 2017,
-            "month": 7,
-            "day": 12
-          },
           "total_chapters": null,
           "read_chapters": 121,
           "thoughts": "É incrível como a história não saí do lugar.",
-          "score": "Horrible"
+          "score": "Horrible",
+          "releaseDate": "2017-7-12",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -927,15 +803,12 @@
             "Supernatural"
           ],
           "countryOfOrigin": "Japan",
-          "startDate": {
-            "year": 2013,
-            "month": 11,
-            "day": 2
-          },
           "total_chapters": null,
           "read_chapters": 67,
           "thoughts": "Não botava fé nenhuma, mas até que é legal",
-          "score": "Good"
+          "score": "Good",
+          "releaseDate": "2013-11-2",
+          "entryDate": "2024-01-22 11:25:12"
         }
       ]
     },
@@ -951,15 +824,12 @@
             "Slice of Life"
           ],
           "countryOfOrigin": "Japan",
-          "startDate": {
-            "year": 2007,
-            "month": 7,
-            "day": 13
-          },
           "total_chapters": null,
           "read_chapters": 0,
           "thoughts": "",
-          "score": null
+          "score": null,
+          "releaseDate": "2007-7-13",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -974,15 +844,12 @@
             "Supernatural"
           ],
           "countryOfOrigin": "Japan",
-          "startDate": {
-            "year": 2007,
-            "month": 9,
-            "day": 27
-          },
           "total_chapters": 108,
           "read_chapters": 0,
           "thoughts": "",
-          "score": null
+          "score": null,
+          "releaseDate": "2007-9-27",
+          "entryDate": "2024-01-22 11:25:12"
         },
         {
           "title": {
@@ -997,15 +864,12 @@
             "Slice of Life"
           ],
           "countryOfOrigin": "Japan",
-          "startDate": {
-            "year": 2016,
-            "month": 9,
-            "day": 8
-          },
           "total_chapters": 196,
           "read_chapters": 0,
           "thoughts": "",
-          "score": null
+          "score": null,
+          "releaseDate": "2016-9-8",
+          "entryDate": "2024-01-22 11:25:12"
         }
       ]
     }

@@ -10,8 +10,11 @@
     --defaultMargins: 5px;
 }
 
-#interface_box {
+#interfaceBox {
     color: var(--activeFontColor);
+}
+
+.sideInterface {
     position: fixed;
     top: 50%;
     left: 5%;
@@ -23,7 +26,8 @@
 /*Dropdown config*/
 .GenreDropdown,
 .CountryDropdown,
-.ScoreDropdown {
+.ScoreDropdown,
+.SortDropdown {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -34,10 +38,11 @@
 
 .GenreButton,
 .CountryButton, 
-.ScoreButton {
+.ScoreButton,
+.SortButton {
     color:var(--activeFontColor);
     background-color: var(--button);
-    width: 120px;
+    width: 100%;
     padding: 8px;
     margin: var(--defaultMargins);
     font-size: 16px;

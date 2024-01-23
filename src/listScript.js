@@ -1,6 +1,7 @@
 //Global variables settings
 dbType = false //  Entry type
 hiddenList = ["hiddenGenre", "hiddenCountry", "hiddenYear", "hiddenScore", "hiddenTitle", "hiddenLi", "hiddenTitle"] // List of all types of hidden rows
+const dropdowns = ["CountryList", "GenreList", "ScoreList", "SortList"]; // Array of dropdown IDs
 
 //Database handling scripts
 function dbExtract(url, dbFormat) {
@@ -27,7 +28,7 @@ function formatPage(data) {
         const section_il = document.createElement('li');
         section_il.id = `section${sectionName}`;
 
-        document.getElementById("table_list").append(section_il);
+        document.getElementById("tableList").append(section_il);
 
         // Add title
         const sectionTitle = document.createElement('h2');
@@ -45,9 +46,13 @@ function formatPage(data) {
         fillTable(section_table, data.List[i][Object.keys(data.List[i])]);
     }
 
-    // Table formatting
-    statusUpdate()
-    hideEmpty()
+    // Sort data
+    sortDataAlphabetically();
+    sortDataByScore();
+
+    //Format table
+    statusUpdate();
+    hideEmpty();
 
     //Interface build
     createInterface()
@@ -56,23 +61,23 @@ function formatPage(data) {
 
 function fillTable(section_table, table_data) {
     if (dbType === 'ANIME') {
-        createHead(section_table, ["Title", "Score", "Episodes", "Thoughts"], ["Country", "Year", "Genre", "Duration"])
-        createBody(section_table, table_data, ["title.english", "score", "watched_episodes", "thoughts"], ["countryOfOrigin", "startDate.year", "genres", "duration"])
+        createHead(section_table, ["Title", "Score", "Episodes", "Thoughts"], ["Country", "Year", "Genre", "Duration", "EntryDate"])
+        createBody(section_table, table_data, ["title.english", "score", "watched_episodes", "thoughts"], ["countryOfOrigin", "releaseDate", "genres", "duration", "entryDate"])
     }
     if (dbType === 'MANGA') {
         createHead(
             section_table, 
             ["Title", "Score", "Chapters", "Thoughts"], 
-            ["Country", "Year", "Genre"])
+            ["Country", "Year", "Genre", "EntryDate"])
         createBody(
             section_table, 
             table_data, 
             ["title.english", "score", "read_chapters", "thoughts"], 
-            ["countryOfOrigin", "startDate.year", "genres"])
+            ["countryOfOrigin", "releaseDate", "genres", "entryDate"])
     }
     else if (dbType === 'MOVIE') {
-        createHead(section_table, ["Title", "Score", "Thoughts"], ["Country", "Year", "Genre", "Duration"])
-        createBody(section_table, table_data, ["title.english", "score", "thoughts"], ["countryOfOrigin", "startDate.year", "genres", "duration"])
+        createHead(section_table, ["Title", "Score", "Thoughts"], ["Country", "Year", "Genre", "Duration", "EntryDate"])
+        createBody(section_table, table_data, ["title.english", "score", "thoughts"], ["countryOfOrigin", "releaseDate", "genres", "duration", "entryDate"])
     }
     else {
         console.log("Unsuported file type")
@@ -441,8 +446,158 @@ function getData(ParameterToGet, unwantedClass) {
     return parameterList
 }
 
+// SORT DATA
+function sortDataAlphabetically() {
+    // Assuming "tableList" is a class name, use getElementsByClassName
+    var listItems = document.querySelectorAll("li");
+
+    // Loop through each element with the class "tableList"
+    for (let itemIndex = 1; itemIndex < listItems.length; itemIndex++) {
+        let item = listItems[itemIndex];
+
+        // Assuming there's only one table in each item, use querySelector
+        let tableBody = item.querySelector('tbody');
+
+        if (tableBody !== null) {
+            let rows = Array.from(tableBody.getElementsByTagName('tr'));
+
+            // Sort the rows based on the text content of the first column (titles)
+            rows.sort((a, b) => {
+                let titleA = a.cells[0].textContent.trim().toLowerCase();
+                let titleB = b.cells[0].textContent.trim().toLowerCase();
+                return titleA.localeCompare(titleB);
+            });
+    
+            // Remove all rows from the table body
+            rows.forEach(row => tableBody.removeChild(row));
+    
+            // Append the sorted rows back to the table body
+            rows.forEach(row => tableBody.appendChild(row));
+        }
+    }
+}
+
+function sortDataByScore() {
+    // Assuming "tableList" is a class name, use getElementsByClassName
+    var listItems = document.querySelectorAll("li");
+
+    // Define a function to map score categories to numerical values
+    function getScoreValue(score) {
+        switch (score.toLowerCase()) {
+            case "favorite":
+                return 5
+            case "excellent":
+                return 4;
+            case "good":
+                return 3;
+            case "meh":
+                return 2;
+            case "bad":
+                return 1;
+            case "very bad":
+                return 0;
+            default:
+                return 0; // Default to lowest value for unknown scores
+        }
+    }
+
+    // Loop through each element with the class "tableList"
+    for (let itemIndex = 1; itemIndex < listItems.length; itemIndex++) {
+        let item = listItems[itemIndex];
+
+        // Assuming there's only one table in each item, use querySelector
+        let tableBody = item.querySelector('tbody');
+
+        if (tableBody !== null) {
+            let rows = Array.from(tableBody.getElementsByTagName('tr'));
+
+            // Sort the rows based on the text content of the first column (titles)
+            rows.sort((a, b) => {
+                let scoreA = a.cells[1].textContent.trim().toLowerCase();
+                let scoreB = b.cells[1].textContent.trim().toLowerCase();
+
+                return getScoreValue(scoreB) - getScoreValue(scoreA);
+            });
+    
+            // Remove all rows from the table body
+            rows.forEach(row => tableBody.removeChild(row));
+
+            // Append the sorted rows back to the table body
+            rows.forEach(row => tableBody.appendChild(row));
+        }
+    }
+}
+
+function sortDataByReleaseDate() {
+    // Assuming "tableList" is a class name, use getElementsByClassName
+    var listItems = document.querySelectorAll("li");
+
+    // Loop through each element with the class "tableList"
+    for (let itemIndex = 1; itemIndex < listItems.length; itemIndex++) {
+        let item = listItems[itemIndex];
+
+        // Assuming there's only one table in each item, use querySelector
+        let tableBody = item.querySelector('tbody');
+
+        if (tableBody !== null) {
+            let rows = Array.from(tableBody.getElementsByTagName('tr'));
+
+            // Sort the rows based on the date in the second column
+            rows.sort((a, b) => {
+                let dateA = new Date(a.cells[5].textContent.trim());
+                let dateB = new Date(b.cells[5].textContent.trim());
+
+                // Compare dates
+                return dateA - dateB;
+            });
+
+            // Remove all rows from the table body
+            rows.forEach(row => tableBody.removeChild(row));
+
+            // Append the sorted rows back to the table body
+            rows.forEach(row => tableBody.appendChild(row));
+        }
+    }
+}
+
+function sortDataByEntryDate() {
+    // Assuming "tableList" is a class name, use getElementsByClassName
+    var listItems = document.querySelectorAll("li");
+
+    // Loop through each element with the class "tableList"
+    for (let itemIndex = 1; itemIndex < listItems.length; itemIndex++) {
+        let item = listItems[itemIndex];
+
+        // Assuming there's only one table in each item, use querySelector
+        let tableBody = item.querySelector('tbody');
+
+        if (tableBody !== null) {
+            let rows = Array.from(tableBody.getElementsByTagName('tr'));
+
+            // Sort the rows based on the date in the second column
+            rows.sort((a, b) => {
+                let dateA = new Date(a.cells[7].textContent.trim());
+                let dateB = new Date(b.cells[7].textContent.trim());
+
+                // Compare dates
+                return dateA - dateB;
+            });
+
+            // Remove all rows from the table body
+            rows.forEach(row => tableBody.removeChild(row));
+
+            // Append the sorted rows back to the table body
+            rows.forEach(row => tableBody.appendChild(row));
+        }
+    }
+}
+
 // USER INTERFACE
 function createInterface() {
+    // InterfaceBox config
+    var interfaceBox = document.getElementById("interfaceBox")
+    interfaceBox.classList.add("sideInterface")
+
     // Title search
     var searchInput = document.createElement("input");
     searchInput.type = "text";
@@ -452,37 +607,53 @@ function createInterface() {
         focusEntry("Title", searchInput.value, "hiddenTitle");
     });
 
-    document.getElementById("interface_box").appendChild(searchInput)
+    document.getElementById("interfaceBox").appendChild(searchInput)
     
     // Genre dropdown
     createDropdown(
-        "interface_box", 
+        "interfaceBox", 
         "Genre", 
         getData("Genre", hiddenList)
     );
 
     // Country dropdown
     createDropdown(
-        "interface_box", 
+        "interfaceBox", 
         "Country", 
         getData("Country", hiddenList)
     );
 
     // Country dropdown
     createDropdown(
-        "interface_box",
+        "interfaceBox",
         "Score",
-        ["Favorite", "Excellent", "Good", "Meh", "Bad", "Horrible"]
+        ["Favorite", "Excellent", "Good", "Meh", "Bad", "Horrible"],
+        null,
+        false
     );
 
+    // Year slider
     createSlider(
-        "interface_box",
+        "interfaceBox",
         "Year",
         getData("Year", hiddenList)
     );
+
+    //Sorting
+    createDropdown(
+        "interfaceBox", 
+        "Sort", 
+        {
+        "Alphabetical": sortDataAlphabetically,
+        "Score": sortDataByScore,
+        "Release date": sortDataByReleaseDate,
+        "Last added": sortDataByEntryDate,
+        },
+        "Alphabetical"
+    );
 }
 
-function createDropdown(boxToPlace, DropdownName, parameterGet) {
+function createDropdown(boxToPlace, DropdownName, parameterGet, defaultOption=null, sorting=true) {
     // Create Dropdown div
     var dropdownDiv = document.createElement("div");
     dropdownDiv.id = `${DropdownName}Dropdown`;
@@ -500,7 +671,17 @@ function createDropdown(boxToPlace, DropdownName, parameterGet) {
     var hiddenClass = `hidden${DropdownName}`
 
     //Populate list div
-    populatedListDIv = populateDropdown(ListDiv, parameterGet, DropdownName, hiddenClass, MainButton)
+    //Check if not dict 
+    if (Array.isArray(parameterGet)) {
+        populatedListDIv = populateFocusDropdown(ListDiv, parameterGet, DropdownName, hiddenClass, MainButton, sorting)
+    }
+    // Check if dict
+    else if (typeof parameterGet === 'object' && parameterGet !== null && !Array.isArray(parameterGet)) {
+        populatedListDIv = populateFunctionDropdown(ListDiv, parameterGet, DropdownName, MainButton, sorting, defaultOption)
+    }
+    else {
+        console.log(`ParameterGet is ${typeof parameterGet}, it must be either a function or an array!`)
+    }
 
     // Add a click event listener to stop propagation when clicking inside the dropdown
     ListDiv.addEventListener("click", function (event) {
@@ -526,52 +707,24 @@ function createButton(DropdownName) {
     return MainButton;
 }
 
-function createOptionButton(text, clickHandler) {
-    var button = document.createElement("button");
-    button.addEventListener("click", function (event) {
-        if (event) {
-            event.stopPropagation();
-        }
-        clickHandler();
-    });
-    button.classList.add("drop_opt");
-    button.innerText = text;
-    return button;
-}
-
 function showDropDown(DropdownId) {
-    if (DropdownId === "CountryList") {
-        // Make other dropdown retract
-        if (document.getElementById("GenreList").classList.contains("show")) {
-            document.getElementById("GenreList").classList.remove("show");
+    // Iterate through the dropdowns
+    for (const dropdown of dropdowns) {
+        const dropdownElement = document.getElementById(dropdown);
+
+        // Check if the current dropdown is not the target one and is currently shown
+        if (dropdown !== DropdownId && dropdownElement.classList.contains("show")) {
+            dropdownElement.classList.remove("show"); // Retract the dropdown
         }
-        else if (document.getElementById("ScoreList").classList.contains("show")) {
-            document.getElementById("ScoreList").classList.remove("show");
-        }
-        //Expand desired dropdown
-        document.getElementById(DropdownId).classList.toggle("show");
     }
-    else if (DropdownId === "GenreList") {
-        if (document.getElementById("CountryList").classList.contains("show")) {
-            document.getElementById("CountryList").classList.remove("show");
-        }
-        else if (document.getElementById("ScoreList").classList.contains("show")) {
-            document.getElementById("ScoreList").classList.remove("show");
-        }
-        document.getElementById(DropdownId).classList.toggle("show");
-    }
-    else if (DropdownId === "ScoreList") {
-        if (document.getElementById("GenreList").classList.contains("show")) {
-            document.getElementById("GenreList").classList.remove("show");
-        }
-        else if (document.getElementById("CountryList").classList.contains("show")) {
-            document.getElementById("CountryList").classList.remove("show");
-        }
-        document.getElementById(DropdownId).classList.toggle("show");
-    }
+
+    // Toggle the target dropdown
+    document.getElementById(DropdownId).classList.toggle("show");
 }
 
-function populateDropdown(ListDiv, parameterGet, DropdownName, hiddenClass, MainButton) {
+// One day, make the two just one
+// Array, for each element in array crete button with corresponding focus/unfocus
+function populateFocusDropdown(ListDiv, parameterGet, DropdownName, hiddenClass, MainButton, sorting) {
     //Ensure, it's brand new
     ListDiv.innerHTML = "";
     
@@ -579,8 +732,15 @@ function populateDropdown(ListDiv, parameterGet, DropdownName, hiddenClass, Main
     var searchInput = createSearch(ListDiv, DropdownName)
     ListDiv.appendChild(searchInput)
 
+    if (sorting) {
+        var sortedParameters = parameterGet.sort()
+    }
+    else {
+        var sortedParameters = parameterGet
+    }
+
     // Create option buttons
-    parameterGet.forEach(function (item) {
+    sortedParameters.forEach(function (item) {
         var OptionButton = createOptionButton(item, function (event) {
             if (event) {
                 event.stopPropagation();
@@ -596,7 +756,6 @@ function populateDropdown(ListDiv, parameterGet, DropdownName, hiddenClass, Main
                 //Reset button
                 MainButton.classList.remove("selectedButton") //Change color back
                 MainButton.innerText = DropdownName//Change button name
-                
             }
             // Originally not selected
             else {
@@ -638,6 +797,83 @@ function populateDropdown(ListDiv, parameterGet, DropdownName, hiddenClass, Main
     });
 
     return ListDiv
+}
+
+// Dict, each option button with it's own function
+function populateFunctionDropdown(ListDiv, parameterGet, DropdownName, MainButton, sorting, defaultOption) {
+    // Add search
+    var searchInput = createSearch(ListDiv, DropdownName);
+    ListDiv.appendChild(searchInput);
+
+    // Check for sorting
+    var sortedKeys = sorting ? Object.keys(parameterGet).sort() : Object.keys(parameterGet);
+
+    // Check if default option exists
+    var defaultOptionExists = defaultOption !== null;
+
+    // Create option buttons
+    for (let key of sortedKeys) {
+        var desiredBehaviour = parameterGet[key];
+
+        function createOptionBehaviour(behaviour) {
+            return function() {
+                if (ListDiv.classList.contains("selectedOpt")) {
+                    var possibleButtonList = ListDiv.querySelectorAll("Button")
+
+                    // Remove previous selection
+                    for (var index = 0; index < possibleButtonList.length; index++) {
+                        var possibleButton = possibleButtonList[index];
+
+                        if (possibleButton.classList.contains("selectedDropOpt")) {
+                            possibleButton.classList.remove("selectedDropOpt");
+                            break;
+                        }
+                    }
+
+                    behaviour();
+
+                    // Add new selection
+                    OptionButton.classList.add("selectedDropOpt")
+                }
+            };
+        }
+
+        let OptionButton = createOptionButton(key, createOptionBehaviour(desiredBehaviour));
+
+        ListDiv.appendChild(OptionButton);
+    }
+
+    // Ensure default option
+    if (defaultOptionExists) {
+        var possibleOptions = ListDiv.querySelectorAll("button");
+
+        possibleOptions.forEach(function (option) {
+            if (option.innerText === defaultOption) {
+                option.classList.add("selectedDropOpt");
+
+                // Assign default option to MainButton
+                MainButton.innerText = defaultOption;
+                MainButton.classList.add("selectedButton");
+
+                ListDiv.classList.add("selectedOpt")
+            }
+        });
+    }
+
+    return ListDiv;
+}
+
+function createOptionButton(text, clickHandler) {
+    var button = document.createElement("button");
+    button.addEventListener("click", function (event) {
+        if (event) {
+            event.stopPropagation();
+        }
+        clickHandler();
+    });
+    button.classList.add("drop_opt");
+    button.innerText = text;
+    return button;
 }
 
 function createSearch(dropdownDiv, DropdownName) {
@@ -690,7 +926,8 @@ function createSlider(boxToPlace, sliderName, parameterGet) {
     var maxYear = 0;
     var minYear = 5000;
 
-    parameterGet.forEach(function (year) {
+    parameterGet.forEach(function (date) {
+        var [year, month, day] = date.split("-")
         if (year > maxYear) {
             maxYear = year;
         } else if (year < minYear) {
