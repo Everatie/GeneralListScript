@@ -22,8 +22,9 @@ Yes.
     <link rel="stylesheet" href="PATH TO ListStyles.css">
 </head>
     <main>
-        <div id="interfaceBox"></div>
-        <ul id="tableList">
+        <h1 id="warning">This site needs JS to work, you can check its content  <a href="https://github.com/Everatie/GeneralListScript/blob/main/src/listScript.js">here</a></h1>
+        <div id="interfaceBox" class="hide"></div>
+        <ul id="tableList" class="hide">
             <li id="sectionInfo">
                 <h2>Info</h2>
                 <table id="table_Info">
@@ -44,13 +45,14 @@ Yes.
     <script src="PATH TO LisScript.json"></script>
     <script>
         //Get Database info
-        dbExtract('PATH TO JSON FILE, "MEDIA TYPE")
+        dbExtract('PATH TO JSON FILE')
     </script>
 ```
 
 ## Roadmap?
-- [ ] "JS need" warning
+- [X] "JS need" warning
 - [X] Change database structure to get automatic mediaType
+- [ ] Update info update logic 
 - [ ] Add support for books (after I do the same at dbManager)
 - [ ] Fix display issues with mobiles
 - [ ] Improve buttons and overall design 

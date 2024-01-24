@@ -42,8 +42,9 @@
 </head>
 <body>
     <main>
-        <div id="interfaceBox"></div>
-        <ul id="tableList">
+        <h1 id="warning">This site needs JS to work, you can check its content  <a href="https://github.com/Everatie/GeneralListScript/blob/main/src/listScript.js">here</a></h1>
+        <div id="interfaceBox" class="hide"></div>
+        <ul id="tableList" class="hide">
             <li id="sectionInfo">
                 <h2>Info</h2>
                 <table id="table_Info">
@@ -64,7 +65,7 @@
     <script src="../src/listScript.js"></script>
     <script>
         //Get Database info
-        dbExtract('PATH')
+        dbExtract('exampleDb.json')
     </script>
 </body>
 </html>

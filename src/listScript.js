@@ -5,6 +5,8 @@ const dropdowns = ["CountryList", "GenreList", "ScoreList", "SortList"]; // Arra
 
 //Database handling scripts
 function dbExtract(url) {
+    removeWarning();
+
     fetch(url)
         .then(function (response) {
             if (!response.ok) {
@@ -20,6 +22,18 @@ function dbExtract(url) {
             //Format page
             formatPage(data);
         });
+}
+
+//Remove warning from HTML page
+function removeWarning(){
+    var warning = document.getElementById("warning");
+    warning.classList.add("hide");
+
+    var interfaceBox = document.getElementById("interfaceBox");
+    interfaceBox.classList.remove("hide")
+
+    var tableList = document.getElementById("tableList");
+    tableList.classList.remove("hide")
 }
 
 function formatPage(data) {

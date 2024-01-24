@@ -13,17 +13,11 @@
     --defaultMargins: 5px;
 }
 
-#interfaceBox {
-    color: var(--activeFontColor);
-}
-
-.sideInterface {
-    position: fixed;
-    top: 50%;
-    left: 5%;
-    transform: translate(-50%, -50%);
-    width: 120px;
-    height: 300px;
+/*JS warning config*/
+#warning {
+    position: absolute;
+    top: 45%;
+    text-align: center;
 }
 
 /*Table config*/
@@ -57,6 +51,19 @@ tbody td {
     text-align: justify;
 }
 
+/*Interface config*/
+#interfaceBox {
+    color: var(--activeFontColor);
+}
+
+.sideInterface {
+    position: fixed;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 300px;
+}
 
 /*Dropdown config*/
 .GenreDropdown,
@@ -215,7 +222,12 @@ tbody td {
 .show {
     display: block;
 }
+/*Used for JS warning*/
+.hide {
+    display: none;
+}
 
+/*Used to hide table rows and related tables*/
 .hiddenGenre,
 .hiddenCountry,
 .hiddenYear,
