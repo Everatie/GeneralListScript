@@ -570,7 +570,7 @@ function createInterface() {
     createDropdown(
         "interfaceBox",
         "Score",
-        ["Favorite", "Excellent", "Good", "Meh", "Bad", "Horrible"],
+        ["Favorite", "Excellent", "Good", "Regular", "Bad", "Horrible"],
         null,
         false
     );
