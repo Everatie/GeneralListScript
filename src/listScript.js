@@ -4,9 +4,7 @@ hiddenList = ["hiddenGenre", "hiddenCountry", "hiddenYear", "hiddenScore", "hidd
 const dropdowns = ["CountryList", "GenreList", "ScoreList", "SortList"]; // Array of dropdown IDs
 
 //Database handling scripts
-function dbExtract(url, dbFormat) {
-    dbType = dbFormat
-
+function dbExtract(url) {
     fetch(url)
         .then(function (response) {
             if (!response.ok) {
@@ -16,14 +14,18 @@ function dbExtract(url, dbFormat) {
             return response.json();
         })
         .then(function (data) {
+            //Dynamic dbType set
+            [dbType] = Object.keys(data)
+
+            //Format page
             formatPage(data);
         });
 }
 
 function formatPage(data) {
-    for (let i = 0; i < data.List.length; i++) {
+    for (let i = 0; i < data[dbType].length; i++) {
         // Create list item for each entry
-        const sectionName = Object.keys(data.List[i]);
+        const sectionName = Object.keys(data[dbType][i]);
 
         const section_il = document.createElement('li');
         section_il.id = `section${sectionName}`;
@@ -32,7 +34,7 @@ function formatPage(data) {
 
         // Add title
         const sectionTitle = document.createElement('h2');
-        sectionTitle.innerHTML = Object.keys(data.List[i]);
+        sectionTitle.innerHTML = Object.keys(data[dbType][i]);
 
         document.getElementById(section_il.id).append(sectionTitle);
 
@@ -43,7 +45,7 @@ function formatPage(data) {
         document.getElementById(section_il.id).appendChild(section_table);
 
         // Fill table
-        fillTable(section_table, data.List[i][Object.keys(data.List[i])]);
+        fillTable(section_table, data[dbType][i][Object.keys(data[dbType][i])]);
     }
 
     // Sort data
@@ -64,7 +66,7 @@ function fillTable(section_table, table_data) {
         createHead(section_table, ["Title", "Score", "Episodes", "Thoughts"], ["Country", "Year", "Genre", "Duration", "EntryDate"])
         createBody(section_table, table_data, ["title.english", "score", "watched_episodes", "thoughts"], ["countryOfOrigin", "releaseDate", "genres", "duration", "entryDate"])
     }
-    if (dbType === 'MANGA') {
+    else if (dbType === 'MANGA') {
         createHead(
             section_table, 
             ["Title", "Score", "Chapters", "Thoughts"], 
@@ -80,7 +82,7 @@ function fillTable(section_table, table_data) {
         createBody(section_table, table_data, ["title.english", "score", "thoughts"], ["countryOfOrigin", "releaseDate", "genres", "duration", "entryDate"])
     }
     else {
-        console.log("Unsuported file type")
+        console.log(`${dbType} is not a supported database type`)
     }
 }
 

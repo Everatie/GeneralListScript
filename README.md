@@ -49,8 +49,9 @@ Yes.
 ```
 
 ## Roadmap?
-- [] Change database structure to include media type
-- [] Add support for books (after I do the same at dbManager)
-- [] Fix display issues with mobiles
-- [] Improve buttons and overall design 
-- [] Update some awkward parts of the code (such as the dropdown logic)
+- [ ] "JS need" warning
+- [X] Change database structure to get automatic mediaType
+- [ ] Add support for books (after I do the same at dbManager)
+- [ ] Fix display issues with mobiles
+- [ ] Improve buttons and overall design 
+- [ ] Update some awkward parts of the code (such as the dropdown logic)
