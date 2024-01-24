@@ -447,45 +447,47 @@ function getData(ParameterToGet, unwantedClass) {
 }
 
 // SORT DATA
-function sortDataAlphabetically() {
-    // Assuming "tableList" is a class name, use getElementsByClassName
-    var listItems = document.querySelectorAll("li");
-
-    // Loop through each element with the class "tableList"
+function sortData(listItems, comparator) {
     for (let itemIndex = 1; itemIndex < listItems.length; itemIndex++) {
         let item = listItems[itemIndex];
-
-        // Assuming there's only one table in each item, use querySelector
         let tableBody = item.querySelector('tbody');
 
         if (tableBody !== null) {
             let rows = Array.from(tableBody.getElementsByTagName('tr'));
 
-            // Sort the rows based on the text content of the first column (titles)
-            rows.sort((a, b) => {
-                let titleA = a.cells[0].textContent.trim().toLowerCase();
-                let titleB = b.cells[0].textContent.trim().toLowerCase();
-                return titleA.localeCompare(titleB);
-            });
-    
-            // Remove all rows from the table body
-            rows.forEach(row => tableBody.removeChild(row));
-    
-            // Append the sorted rows back to the table body
-            rows.forEach(row => tableBody.appendChild(row));
+            // Sort the rows using the provided comparator function
+            rows.sort(comparator);
+
+            // Use a document fragment to batch DOM modifications
+            let fragment = document.createDocumentFragment();
+
+            // Append the sorted rows to the fragment
+            rows.forEach(row => fragment.appendChild(row));
+
+            // Clear the existing rows from the table body
+            tableBody.innerHTML = '';
+
+            // Append the fragment to the table body
+            tableBody.appendChild(fragment);
         }
     }
 }
 
-function sortDataByScore() {
-    // Assuming "tableList" is a class name, use getElementsByClassName
+function sortDataAlphabetically() {
     var listItems = document.querySelectorAll("li");
 
-    // Define a function to map score categories to numerical values
+    sortData(listItems, (a, b) => {
+        let titleA = a.cells[0].textContent.trim().toLowerCase();
+        let titleB = b.cells[0].textContent.trim().toLowerCase();
+        return titleA.localeCompare(titleB);
+    });
+}
+
+function sortDataByScore() {
     function getScoreValue(score) {
         switch (score.toLowerCase()) {
             case "favorite":
-                return 5
+                return 5;
             case "excellent":
                 return 4;
             case "good":
@@ -501,95 +503,36 @@ function sortDataByScore() {
         }
     }
 
-    // Loop through each element with the class "tableList"
-    for (let itemIndex = 1; itemIndex < listItems.length; itemIndex++) {
-        let item = listItems[itemIndex];
+    var listItems = document.querySelectorAll("li");
 
-        // Assuming there's only one table in each item, use querySelector
-        let tableBody = item.querySelector('tbody');
+    sortData(listItems, (a, b) => {
+        let scoreA = a.cells[1].textContent.trim().toLowerCase();
+        let scoreB = b.cells[1].textContent.trim().toLowerCase();
 
-        if (tableBody !== null) {
-            let rows = Array.from(tableBody.getElementsByTagName('tr'));
-
-            // Sort the rows based on the text content of the first column (titles)
-            rows.sort((a, b) => {
-                let scoreA = a.cells[1].textContent.trim().toLowerCase();
-                let scoreB = b.cells[1].textContent.trim().toLowerCase();
-
-                return getScoreValue(scoreB) - getScoreValue(scoreA);
-            });
-    
-            // Remove all rows from the table body
-            rows.forEach(row => tableBody.removeChild(row));
-
-            // Append the sorted rows back to the table body
-            rows.forEach(row => tableBody.appendChild(row));
-        }
-    }
+        return getScoreValue(scoreB) - getScoreValue(scoreA);
+    });
 }
 
 function sortDataByReleaseDate() {
-    // Assuming "tableList" is a class name, use getElementsByClassName
     var listItems = document.querySelectorAll("li");
 
-    // Loop through each element with the class "tableList"
-    for (let itemIndex = 1; itemIndex < listItems.length; itemIndex++) {
-        let item = listItems[itemIndex];
+    sortData(listItems, (a, b) => {
+        let dateA = new Date(a.cells[5].textContent.trim());
+        let dateB = new Date(b.cells[5].textContent.trim());
 
-        // Assuming there's only one table in each item, use querySelector
-        let tableBody = item.querySelector('tbody');
-
-        if (tableBody !== null) {
-            let rows = Array.from(tableBody.getElementsByTagName('tr'));
-
-            // Sort the rows based on the date in the second column
-            rows.sort((a, b) => {
-                let dateA = new Date(a.cells[5].textContent.trim());
-                let dateB = new Date(b.cells[5].textContent.trim());
-
-                // Compare dates
-                return dateA - dateB;
-            });
-
-            // Remove all rows from the table body
-            rows.forEach(row => tableBody.removeChild(row));
-
-            // Append the sorted rows back to the table body
-            rows.forEach(row => tableBody.appendChild(row));
-        }
-    }
+        return dateA - dateB;
+    });
 }
 
 function sortDataByEntryDate() {
-    // Assuming "tableList" is a class name, use getElementsByClassName
     var listItems = document.querySelectorAll("li");
 
-    // Loop through each element with the class "tableList"
-    for (let itemIndex = 1; itemIndex < listItems.length; itemIndex++) {
-        let item = listItems[itemIndex];
+    sortData(listItems, (a, b) => {
+        let dateA = new Date(a.cells[7].textContent.trim());
+        let dateB = new Date(b.cells[7].textContent.trim());
 
-        // Assuming there's only one table in each item, use querySelector
-        let tableBody = item.querySelector('tbody');
-
-        if (tableBody !== null) {
-            let rows = Array.from(tableBody.getElementsByTagName('tr'));
-
-            // Sort the rows based on the date in the second column
-            rows.sort((a, b) => {
-                let dateA = new Date(a.cells[7].textContent.trim());
-                let dateB = new Date(b.cells[7].textContent.trim());
-
-                // Compare dates
-                return dateA - dateB;
-            });
-
-            // Remove all rows from the table body
-            rows.forEach(row => tableBody.removeChild(row));
-
-            // Append the sorted rows back to the table body
-            rows.forEach(row => tableBody.appendChild(row));
-        }
-    }
+        return dateA - dateB;
+    });
 }
 
 // USER INTERFACE
@@ -649,7 +592,7 @@ function createInterface() {
         "Release date": sortDataByReleaseDate,
         "Last added": sortDataByEntryDate,
         },
-        "Alphabetical"
+        "Score"
     );
 }
 
@@ -979,4 +922,22 @@ function createSlider(boxToPlace, sliderName, parameterGet) {
     document.getElementById(boxToPlace).appendChild(slider);
     sliderValueDiv.appendChild(sliderValueText);
     document.getElementById(boxToPlace).appendChild(sliderValueDiv);
+}
+
+// RESPONSIVENESS
+window.addEventListener("resize", resizeContent)
+
+function resizeContent() {
+    screenWidth = window.innerWidth
+    var interfaceBox = document.getElementById("interfaceBox")
+
+    if (screenWidth < 780) {
+
+    }
+    if (screenWidth < 1000) {
+        interfaceBox.classList.remove("sideInterface")
+    }
+    else {
+        interfaceBox.classList.add("sideInterface")
+    }
 }

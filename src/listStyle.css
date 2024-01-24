@@ -1,9 +1,12 @@
 :root {
+    --tableBg: #363636;
+    --tableHeadingBg:#f0f8ff;
+    --tableHeadingFontColor:#1f1f1f;
     --button: #04AA6D;
     --selectedButton : #025738;
     --selectedOption: #04AA6D;
     --dropdownBg: #363636;
-    --activeFontColor: aliceblue;
+    --activeFontColor: #f0f8ff;
     --sliderThumb: #04AA6D;
     --sliderColor: #363636;
     --defaultRadius: 5px;
@@ -22,6 +25,38 @@
     width: 120px;
     height: 300px;
 }
+
+/*Table config*/
+table,
+th,
+td {
+    max-width: 800px;
+    padding: 5px;
+    margin: 20px;
+    border-collapse: collapse;
+}
+
+table {
+    background-color: var(--tableBg);
+    width: 100%;
+    border-radius: var(--defaultRadius);
+    overflow: hidden;
+    /* Ensures the border-radius clips the content */
+}
+
+thead {
+    text-align: center;
+    color: var(--tableHeadingFontColor);
+    background-color: var(--tableHeadingBg);
+    border-radius: 10px 10px 0 0;
+    /* Matches the top border-radius of the table */
+}
+
+tbody td {
+    padding: 15px;
+    text-align: justify;
+}
+
 
 /*Dropdown config*/
 .GenreDropdown,
