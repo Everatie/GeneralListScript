@@ -14,7 +14,7 @@ Yes, take a look at the [live demo](https://everatie.neocities.org/Lists/Lists_p
 Yes.
 
 ## How to make it work?
-1. Make a specific [json file](https://github.com/Everatie/GeneralListScript/blob/main/examples/exampleDb.json). You might want to use [dbManager](https://github.com/Everatie/GeneralListScript) to manage it.
+1. Make a specific [json file](https://github.com/Everatie/GeneralListScript/blob/main/examples/exampleDb.json). You might want to use [dbManager](https://github.com/Everatie/DbManager) to manage it.
 2. Add this to the desired page, take a look at the example [HTML](https://github.com/Everatie/GeneralListScript/blob/main/examples/listExample.html)
 
 ```HTML
@@ -52,7 +52,7 @@ Yes.
 ## Roadmap?
 - [X] "JS need" warning
 - [X] Change database structure to get automatic mediaType
-- [ ] Update info update logic 
+- [ ] Improve "info update" logic (change createHead to have dynamic colspan)
 - [ ] Add support for books (after I do the same at dbManager)
 - [ ] Fix display issues with mobiles
 - [ ] Improve buttons and overall design 

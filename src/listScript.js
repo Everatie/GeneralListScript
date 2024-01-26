@@ -5,7 +5,7 @@ const dropdowns = ["CountryList", "GenreList", "ScoreList", "SortList"]; // Arra
 
 //Database handling scripts
 function dbExtract(url) {
-    removeWarning();
+    removeJSWarning();
 
     fetch(url)
         .then(function (response) {
@@ -24,8 +24,7 @@ function dbExtract(url) {
         });
 }
 
-//Remove warning from HTML page
-function removeWarning(){
+function removeJSWarning(){
     var warning = document.getElementById("warning");
     warning.classList.add("hide");
 
@@ -37,6 +36,7 @@ function removeWarning(){
 }
 
 function formatPage(data) {
+    // Create status function
     for (let i = 0; i < data[dbType].length; i++) {
         // Create list item for each entry
         const sectionName = Object.keys(data[dbType][i]);
@@ -71,8 +71,7 @@ function formatPage(data) {
     hideEmpty();
 
     //Interface build
-    createInterface()
-
+    createInterface();
 }
 
 function fillTable(section_table, table_data) {
@@ -93,7 +92,7 @@ function fillTable(section_table, table_data) {
     }
     else if (dbType === 'MOVIE') {
         createHead(section_table, ["Title", "Score", "Thoughts"], ["Country", "Year", "Genre", "Duration", "EntryDate"])
-        createBody(section_table, table_data, ["title.english", "score", "thoughts"], ["countryOfOrigin", "releaseDate", "genres", "duration", "entryDate"])
+        createBody(section_table, table_data, ["title.originalTitle", "score", "thoughts"], ["countryOfOrigin", "releaseDate", "genres", "duration", "entryDate"])
     }
     else {
         console.log(`${dbType} is not a supported database type`)
@@ -247,7 +246,7 @@ function findTable(parameter, desired_entry, unwantedClasses = null) {
 }
 
 function focusEntry(parameter, desired_entry, hiddenClass, unwantedClasses=null) {
-    // HiddenClass = class to hide unwanted elements; SHOULD BE STRING
+    // HiddenClass = class used to hide unwanted elements; SHOULD BE STRING
     // Unwanted class = Classes to ignore during search; SHOULD BE ARRAY
 
     var [found_results, unmatched_results] = findTable(parameter, desired_entry, unwantedClasses);

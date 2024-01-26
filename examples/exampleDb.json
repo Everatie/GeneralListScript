@@ -15,7 +15,7 @@
           ],
           "countryOfOrigin": "Japan",
           "title": {
-            "romaji": "Tokyo Ghoul",
+            "originalTitle": "Tokyo Ghoul",
             "english": "Tokyo Ghoul"
           },
           "total_chapters": 144,
@@ -28,7 +28,7 @@
         },
         {
           "title": {
-            "romaji": "ReLife",
+            "originalTitle": "ReLife",
             "english": "ReLIFE"
           },
           "genres": [
@@ -58,7 +58,7 @@
           ],
           "countryOfOrigin": "Korea",
           "title": {
-            "romaji": "Jjokjjogireul Juseyo",
+            "originalTitle": "Jjokjjogireul Juseyo",
             "english": "Gimme That Pacifier!"
           },
           "total_chapters": null,
@@ -76,7 +76,7 @@
           ],
           "countryOfOrigin": "Japan",
           "title": {
-            "romaji": "Vinland Saga",
+            "originalTitle": "Vinland Saga",
             "english": "Vinland Saga"
           },
           "total_chapters": null,
@@ -94,7 +94,7 @@
           ],
           "countryOfOrigin": "Korea",
           "title": {
-            "romaji": "Eotteon Gyemonimui Marchen",
+            "originalTitle": "Eotteon Gyemonimui Marchen",
             "english": "A Stepmother’s Märchen"
           },
           "total_chapters": null,
@@ -112,7 +112,7 @@
           ],
           "countryOfOrigin": "Japan",
           "title": {
-            "romaji": "Horimiya",
+            "originalTitle": "Horimiya",
             "english": "Horimiya"
           },
           "total_chapters": 152,
@@ -124,7 +124,7 @@
         },
         {
           "title": {
-            "romaji": "Jeonjijeok Dokja Sijeom",
+            "originalTitle": "Jeonjijeok Dokja Sijeom",
             "english": "Omniscient Reader"
           },
           "genres": [
@@ -143,7 +143,7 @@
         },
         {
           "title": {
-            "romaji": "Yofukashi no Uta",
+            "originalTitle": "Yofukashi no Uta",
             "english": "Call of the Night"
           },
           "genres": [
@@ -164,7 +164,7 @@
         },
         {
           "title": {
-            "romaji": "Blue Period",
+            "originalTitle": "Blue Period",
             "english": "Blue Period"
           },
           "genres": [
@@ -182,7 +182,7 @@
         },
         {
           "title": {
-            "romaji": "Jigokuraku",
+            "originalTitle": "Jigokuraku",
             "english": "Hell’s Paradise: Jigokuraku"
           },
           "genres": [
@@ -202,7 +202,7 @@
         },
         {
           "title": {
-            "romaji": "Nan Hao Shang Feng",
+            "originalTitle": "Nan Hao Shang Feng",
             "english": "Nan Hao Shang Feng"
           },
           "genres": [
@@ -220,7 +220,7 @@
         },
         {
           "title": {
-            "romaji": "Kemono Jihen",
+            "originalTitle": "Kemono Jihen",
             "english": "Kemono Jihen"
           },
           "genres": [
@@ -238,7 +238,7 @@
         },
         {
           "title": {
-            "romaji": "Ao no Exorcist",
+            "originalTitle": "Ao no Exorcist",
             "english": "Blue Exorcist"
           },
           "genres": [
@@ -256,7 +256,7 @@
         },
         {
           "title": {
-            "romaji": "Sweet Home",
+            "originalTitle": "Sweet Home",
             "english": "Sweet Home"
           },
           "genres": [
@@ -277,7 +277,7 @@
         },
         {
           "title": {
-            "romaji": "Kusuriya no Hitorigoto",
+            "originalTitle": "Kusuriya no Hitorigoto",
             "english": "The Apothecary Diaries"
           },
           "genres": [
@@ -295,7 +295,7 @@
         },
         {
           "title": {
-            "romaji": "Fumetsu no Anata e",
+            "originalTitle": "Fumetsu no Anata e",
             "english": "To Your Eternity"
           },
           "genres": [
@@ -329,7 +329,7 @@
           ],
           "countryOfOrigin": "Japan",
           "title": {
-            "romaji": "Tokyo Ghoul:re",
+            "originalTitle": "Tokyo Ghoul:re",
             "english": "Tokyo Ghoul:re"
           },
           "total_chapters": 181,
@@ -342,7 +342,7 @@
         },
         {
           "title": {
-            "romaji": "Medical Hwansaeng",
+            "originalTitle": "Medical Hwansaeng",
             "english": "Medical return"
           },
           "genres": [
@@ -361,7 +361,7 @@
         },
         {
           "title": {
-            "romaji": "SSS-geup Jugeoya Saneun Hunter",
+            "originalTitle": "SSS-geup Jugeoya Saneun Hunter",
             "english": "SSS-Class Revival Hunter"
           },
           "genres": [
@@ -381,7 +381,7 @@
         },
         {
           "title": {
-            "romaji": "Yao Shen Ji",
+            "originalTitle": "Yao Shen Ji",
             "english": "Tales of Demons and Gods"
           },
           "genres": [
@@ -400,7 +400,7 @@
         },
         {
           "title": {
-            "romaji": "Wo Laopo Shi Mowang Daren",
+            "originalTitle": "Wo Laopo Shi Mowang Daren",
             "english": "My Wife is the Demon Queen"
           },
           "genres": [
@@ -419,7 +419,7 @@
         },
         {
           "title": {
-            "romaji": "Douluo Dalu II: Jueshi Tangmen",
+            "originalTitle": "Douluo Dalu II: Jueshi Tangmen",
             "english": "Soul Land 2: The Unrivaled Tang Sect"
           },
           "genres": [
@@ -438,7 +438,7 @@
         },
         {
           "title": {
-            "romaji": "Douluo Dalu",
+            "originalTitle": "Douluo Dalu",
             "english": "Soul Land"
           },
           "genres": [
@@ -457,7 +457,7 @@
         },
         {
           "title": {
-            "romaji": "Mato Seihei no Slave",
+            "originalTitle": "Mato Seihei no Slave",
             "english": "Chained Soldier"
           },
           "genres": [
@@ -478,7 +478,7 @@
         },
         {
           "title": {
-            "romaji": "Owari no Seraph",
+            "originalTitle": "Owari no Seraph",
             "english": "Seraph of the End: Vampire Reign"
           },
           "genres": [
@@ -497,7 +497,7 @@
         },
         {
           "title": {
-            "romaji": "Saikin Yatotta Maid ga Ayashii",
+            "originalTitle": "Saikin Yatotta Maid ga Ayashii",
             "english": "Saikin Yatotta Maid ga Ayashii"
           },
           "genres": [
@@ -514,7 +514,7 @@
         },
         {
           "title": {
-            "romaji": "Guang Zhizi",
+            "originalTitle": "Guang Zhizi",
             "english": "Great Mage of Light"
           },
           "genres": [
@@ -533,7 +533,7 @@
         },
         {
           "title": {
-            "romaji": "Douluo Dalu 3: Long Wang Chuanshuo",
+            "originalTitle": "Douluo Dalu 3: Long Wang Chuanshuo",
             "english": "Soul Land 3: Legend of the Dragon King"
           },
           "genres": [
@@ -553,7 +553,7 @@
         },
         {
           "title": {
-            "romaji": "Sinui Tap",
+            "originalTitle": "Sinui Tap",
             "english": "Tower of God"
           },
           "genres": [
@@ -573,7 +573,7 @@
         },
         {
           "title": {
-            "romaji": "Gwihwanjaui Mabeobeun Teukbyeolhaeya Hamnida",
+            "originalTitle": "Gwihwanjaui Mabeobeun Teukbyeolhaeya Hamnida",
             "english": "A Returner's Magic Should Be Special"
           },
           "genres": [
@@ -591,7 +591,7 @@
         },
         {
           "title": {
-            "romaji": "Oegwauisa Elise",
+            "originalTitle": "Oegwauisa Elise",
             "english": "Doctor Elise: The Royal Lady with the Lamp"
           },
           "genres": [
@@ -609,7 +609,7 @@
         },
         {
           "title": {
-            "romaji": "Hwataga Doen Oegwauisa",
+            "originalTitle": "Hwataga Doen Oegwauisa",
             "english": "The Divine Surgeon"
           },
           "genres": [
@@ -626,7 +626,7 @@
         },
         {
           "title": {
-            "romaji": "Again My Life",
+            "originalTitle": "Again My Life",
             "english": "Again My Life"
           },
           "genres": [
@@ -643,7 +643,7 @@
         },
         {
           "title": {
-            "romaji": "The Gamer",
+            "originalTitle": "The Gamer",
             "english": "The Gamer"
           },
           "genres": [
@@ -661,7 +661,7 @@
         },
         {
           "title": {
-            "romaji": "Jibaku Shounen Hanako-kun",
+            "originalTitle": "Jibaku Shounen Hanako-kun",
             "english": "Toilet-Bound Hanako-kun"
           },
           "genres": [
@@ -682,7 +682,7 @@
         },
         {
           "title": {
-            "romaji": "Tamen De Gushi",
+            "originalTitle": "Tamen De Gushi",
             "english": "SQ: Begin W/Your Name!"
           },
           "genres": [
@@ -700,7 +700,7 @@
         },
         {
           "title": {
-            "romaji": "Shinigami Bocchan to Kuro Maid",
+            "originalTitle": "Shinigami Bocchan to Kuro Maid",
             "english": "The Duke of Death and His Maid"
           },
           "genres": [
@@ -718,7 +718,7 @@
         },
         {
           "title": {
-            "romaji": "Soredemo Ayumu wa Yosetekuru",
+            "originalTitle": "Soredemo Ayumu wa Yosetekuru",
             "english": "When Will Ayumu Make His Move?"
           },
           "genres": [
@@ -736,7 +736,7 @@
         },
         {
           "title": {
-            "romaji": "Yozakura-san Chi no Daisakusen",
+            "originalTitle": "Yozakura-san Chi no Daisakusen",
             "english": "Mission: Yozakura Family"
           },
           "genres": [
@@ -754,7 +754,7 @@
         },
         {
           "title": {
-            "romaji": "Ijiranaide, Nagatoro-san",
+            "originalTitle": "Ijiranaide, Nagatoro-san",
             "english": "Don't Toy With Me, Miss Nagatoro"
           },
           "genres": [
@@ -772,7 +772,7 @@
         },
         {
           "title": {
-            "romaji": "Kanojo, Okarishimasu",
+            "originalTitle": "Kanojo, Okarishimasu",
             "english": "Rent-A-Girlfriend"
           },
           "genres": [
@@ -791,7 +791,7 @@
         },
         {
           "title": {
-            "romaji": "Sousei no Onmyouji",
+            "originalTitle": "Sousei no Onmyouji",
             "english": "Twin Star Exorcists"
           },
           "genres": [
@@ -816,7 +816,7 @@
       "PlanToRead": [
         {
           "title": {
-            "romaji": "3-gatsu no Lion",
+            "originalTitle": "3-gatsu no Lion",
             "english": "March Comes in Like a Lion"
           },
           "genres": [
@@ -833,7 +833,7 @@
         },
         {
           "title": {
-            "romaji": "Ookami to Koushinryou",
+            "originalTitle": "Ookami to Koushinryou",
             "english": "Spice & Wolf"
           },
           "genres": [
@@ -853,7 +853,7 @@
         },
         {
           "title": {
-            "romaji": "BEASTARS",
+            "originalTitle": "BEASTARS",
             "english": "BEASTARS"
           },
           "genres": [
